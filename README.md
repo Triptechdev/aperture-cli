@@ -10,7 +10,7 @@ CLI tool for deploying web apps as native applications.
 
 ```bash
 # Add the tap
-brew tap triptechdev/aperture-cli
+brew tap triptechdev/aperture-cli https://github.com/Triptechdev/aperture-cli
 
 # Install
 brew install aperture
@@ -20,6 +20,7 @@ aperture --version
 ```
 
 **Update:**
+
 ```bash
 brew upgrade aperture
 ```
@@ -31,6 +32,7 @@ Download the latest release for your platform:
 #### macOS
 
 **Universal Binary (Apple Silicon & Intel):**
+
 ```bash
 curl -L https://github.com/triptechdev/aperture-cli/releases/latest/download/aperture-universal-apple-darwin.tar.gz | tar xz
 sudo mv aperture-universal /usr/local/bin/aperture
@@ -39,12 +41,14 @@ sudo mv aperture-universal /usr/local/bin/aperture
 #### Linux
 
 **x86_64:**
+
 ```bash
 curl -L https://github.com/triptechdev/aperture-cli/releases/latest/download/aperture-x86_64-unknown-linux-gnu.tar.gz | tar xz
 sudo mv aperture /usr/local/bin/
 ```
 
 **ARM64:**
+
 ```bash
 curl -L https://github.com/triptechdev/aperture-cli/releases/latest/download/aperture-aarch64-unknown-linux-gnu.tar.gz | tar xz
 sudo mv aperture /usr/local/bin/
@@ -120,6 +124,7 @@ sha256sum -c checksums.txt
 The Aperture CLI follows [Semantic Versioning](https://semver.org/). We support the last 3 minor versions.
 
 To check for updates:
+
 ```bash
 # Homebrew
 brew update && brew outdated aperture
