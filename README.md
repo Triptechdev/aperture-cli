@@ -1,6 +1,8 @@
 # Aperture CLI
 
-Command-line interface for deploying web applications as native apps.
+CLI tool for deploying web apps as native applications.
+
+**Current Version:** 0.1.0
 
 ## Installation
 
@@ -28,16 +30,10 @@ Download the latest release for your platform:
 
 #### macOS
 
-**Apple Silicon (M1/M2/M3):**
+**Universal Binary (Apple Silicon & Intel):**
 ```bash
-curl -L https://github.com/triptechdev/aperture-cli/releases/latest/download/aperture-aarch64-apple-darwin.tar.gz | tar xz
-sudo mv aperture /usr/local/bin/
-```
-
-**Intel:**
-```bash
-curl -L https://github.com/triptechdev/aperture-cli/releases/latest/download/aperture-x86_64-apple-darwin.tar.gz | tar xz
-sudo mv aperture /usr/local/bin/
+curl -L https://github.com/triptechdev/aperture-cli/releases/latest/download/aperture-universal-apple-darwin.tar.gz | tar xz
+sudo mv aperture-universal /usr/local/bin/aperture
 ```
 
 #### Linux
@@ -96,8 +92,8 @@ aperture completions fish > ~/.config/fish/completions/aperture.fish
 
 ## Supported Platforms
 
-- macOS (Apple Silicon & Intel)
-- Linux (x86_64 & ARM64)
+- **macOS:** Universal binary supporting both Apple Silicon and Intel
+- **Linux:** x86_64 and ARM64
 
 ## Release Verification
 
